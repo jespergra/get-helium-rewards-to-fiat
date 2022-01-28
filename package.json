@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jespergra/get-helium-rewards-to-fiat#readme",
   "dependencies": {
+    "dotenv": "^14.3.2",
     "node-fetch": "^3.2.0"
   }
 }

@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import 'dotenv/config';
 (async () => {
 
     let today = new Date();
@@ -8,8 +9,8 @@ import fetch from 'node-fetch';
 
     // Preferbly run this script before next day to get an accurate 24h value
     today = `${yyyy}-${mm}-${dd}`;
-    const hotspotAddress = "YOUR-HOTSPOT-ADDRESS";
-    const coinmarketcapApiKey = "YOUR-API-KEY";
+    const hotspotAddress = process.env.HOTSPOT_ADDRESS;
+    const coinmarketcapApiKey = process.env.API_KEY;
 
 
     // No API-key required. You just need your hotspot address
